@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lucida Sans Regular", "Lucida Grande";
+}
+body {
+  background-color: #d1cccc;
+}
+/*HEADER*/
+header {
+  width: 100vw;
+}
+#about {
+  background-color: #121212;
+}
+header .abouts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  height: 40px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.abouts li {
+  display: inline-flex;
+}
+.about-left a {
+  font-size: 12px;
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+.abouts a:hover {
+  color: #053a8a;
+}
+
+.about-icons img {
+  width: 25px;
+}
+.about-icons {
+  padding-right: 30px;
+}
+.about-icons li {
+  width: 30px;
+}
+.about-rigth {
+  display: inline-flex;
+  align-items: center;
+}
+form {
+  display: inline-flex;
+  height: 30px;
+}
+.about-rigth input {
+  max-width: 180px;
+  height: 30px;
+  border: 0;
+  outline: none;
+  text-indent: 5px;
+}
+.about-rigth input::placeholder {
+  font-size: 13px;
+  text-indent: 5px;
+}
+.about-rigth button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: #c41e2f;
+}
+.about-rigth button img {
+  height: 30px;
+  padding: 4px;
+}
+#publicity {
+  background-color: #fff;
+}
+.publicitys {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.publicitys .logo img {
+  height: 80px;
+}
+.publicity-rigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #c41e2f;
+}
+
+.publicity-rigth a {
+  padding: 20px 150px;
+  font-size: 30px;
+  color: #fff;
+}
+.menu {
+  background-color: #c41e2f;
+}
+.menu ul {
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+}
+.menu li {
+  display: inline-block;
+  max-width: 130px;
+}
+.menu a {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  padding: 15px 10px;
+}
+.menu a:hover {
+  background-color: #c40000;
+}
+.menu ul li ul {
+  display: none;
+  position: absolute;
+}
+
+.menu li:hover ul {
+  display: block;
+}
+.menu ul ul li {
+  background-color: #c41e2f;
+  display: block;
+  max-width: 130px;
+  min-width: 70px;
+}
+
+/*      */
+
+/*  CONTAINER    */
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+/*      */
+/*   SECTION TOP   */
+.top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*      */
