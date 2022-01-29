@@ -10,22 +10,33 @@
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
 }
-
+body{
+  background-color: #0E091B;
+  color: #fff;
+  padding: 10px 32px;
+}
 h1 {
-  font-size: 3.5rem;
-  line-height: 80px;
-  color: #333333;
+  font-size: 2rem;
+  line-height: 50px;
 }
 h3 {
-  font-size: 1.5em;
-  margin: 0 0 8px;
+  font-size: 1.32em;
 }
 p {
-  line-height: 60px;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 a {
-  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 4px;
+  min-height: 90px;
+  border: 2px solid transparent;
+}
+
+a:hover {
+  border-color: #ffffff;
 }
 #container {
   margin: auto;
@@ -33,71 +44,53 @@ a {
 }
 #section-about-me {
   text-align: center;
+  padding-bottom: 30px;
 }
-.image {
-  width: 250px;
-  height: 250px;
+#section-about-me p{
+  color: #cece;
 }
 img {
-  width: 200px;
-  height: 250px;
-  padding: 20px 0;
+    width: 125px;
+    padding: 20px 0;
 }
 #section-box-content {
-  margin: 20px auto;
-  max-width: 900px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 600px;
+  display: grid;
+  grid-template: repeat(3, 1fr)/ repeat(2, auto);   
+  gap: 20px;
 }
 .section-box {
-  min-width: 360px;
-  padding: 30px;
-  margin: 10px;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
   cursor: pointer;
 }
-.section-box:hover {
-  border-color: #622cba;
-  color: #622cba;
+
+.instagram{
+  background: linear-gradient( 
+    45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.linkedin{
+  background: linear-gradient( 
+    90deg, rgba(111, 139, 231, 1) 0%, rgba(47, 41, 157, 1) 100% );
+}
+.github{
+  background-color:  #8D48F1;
+}
+.twitter{
+  background-color: #00acee ;
+}
+.whatsapp{
+  background-color: #34af23;
+}
+.e-mail{
+  background: #db4a39;
+}
+@media (max-width: 480px) {
+  #section-box-content{
+        grid-template: repeat(6, auto)/ auto;   
+  }
+
 }
 
-@media (max-width: 767px) {
-  h1 {
-    font-size: 2.25rem;
-    line-height: 65px;
-  }
-  .section-box {
-    display: block;
-  }
-  p {
-    font-size: 1.25em;
-    line-height: 40px;
-  }
-
-  #section-about-me p {
-    padding: 0 10px;
-    line-height: 30px;
-  }
-}
-
-@media (max-width: 500px) {
-  img {
-    width: 125px;
-    height: 125px;
-    margin: 20px 0 10px;
-    padding: 0;
-  }
-}
 @media (max-width: 375px) {
-  h1 {
-    font-size: 2.25rem;
-  }
-  p {
-    font-size: 1.25em;
-  }
-  .section-box {
-    min-width: 300px;
-  }
+  
 }
