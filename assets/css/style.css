@@ -13,29 +13,27 @@ body{
   background-color: #0E091B;
   color: #fff;
   padding: 0px 20px;
-
 }
 h1 {
   font-size: 2rem;
   line-height: 50px;
 }
 h3 {
-  font-size: 1.32em;
+  font-size: 1.2em;
 }
 p {
   font-size: 1.2em;
 }
-a {
+.box-content a {
   display: flex;
-  align-items: center;
   justify-content: center;
   color: #fff;
   border-radius: 4px;
   min-height: 90px;
   border: 2px solid #0E091B;
+  min-width: 337.5px;
 }
-
-a:hover {
+.box-content a:hover {
   border-color: #ffffff;
 }
 #container {
@@ -51,27 +49,44 @@ a:hover {
 .about-me {
   text-align: center;
 }
-.about-me-social{
+.about-me-social,.about-me-social a{
   color: #cece;
   padding: 20px 0;
 }
-.about-me-social p{
-  font-weight: bold;
+.about-me-social a{
+  font-size: 1.2em;
+  transition: 0.2s all ease-in;
 }
-img {
+.about-me-social a:hover{
+  opacity: 0.5;
+}
+.about-me img {
   padding: 10px 0;
   border-radius: 50%;
+  width: 130px;
+  object-fit: cover;
 }
 .box-content {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   display: grid;
   grid-template: repeat(3, 1fr)/ repeat(2, auto);   
   gap: 10px;
 }
 .box {
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  transition: 0.3s all ease-in;
+  padding: 0 30px;
+  min-width: 192px;
+}
+.box:hover{
+  transform: scale(1.1);
+}
+.box img{
+  margin-right: 15px;
 }
 #portfolio{
   background-image: linear-gradient(90deg,#13013d, #271447 )
@@ -83,7 +98,6 @@ img {
   background: linear-gradient( 
     90deg, rgba(111, 139, 231, 1) 0%, rgba(47, 41, 157, 1) 100% );
 }
-
 #instagram{
   background: linear-gradient( 
     45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -94,9 +108,13 @@ img {
 #e-mail{
   background-color: #db4a39;
 }
-
+@media (max-width: 800px) {
+  .box-content a{
+    min-width: 0;
+  }
+}
 @media (max-width: 500px) {
   .box-content{
-        grid-template: repeat(6, auto)/ auto;   
+      grid-template: repeat(6, auto)/ auto;   
   }
 }
